@@ -1,0 +1,41 @@
+.stats {
+    min-height: 342px;
+    display: flex;
+    &__col1, &__col2 {
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        color: #FFFFFF;
+
+        padding: 66px 0;
+        flex: 50%;
+
+        &_num {
+            margin-top: 35px;
+        }
+        &_descr {
+            display: inline-block;
+            text-align: right;
+            max-width: 260px;
+            margin-top: 30px;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 23px;
+        }
+    }
+    &__col1 {
+        background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
+        padding-right: 90px;
+        text-align: right;
+    }
+    &__col2 {
+        background: linear-gradient(101.48deg, #E9EFFF 41.56%, #E0E9FF 81.53%);
+        padding-left: 90px;
+        color: #5E80FF;
+        &_descr {
+            text-align: left;
+        }
+    }
+    
+}

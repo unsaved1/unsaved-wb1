@@ -1,0 +1,80 @@
+.plan-manage {
+    background: #F5F8FF;
+    min-height: 776px;
+    padding: 170px 0;
+    &__wrapper {
+        margin: 0 auto;
+        align-items: center;
+        width: 1300px;
+        position: relative;
+    }
+    &__col1 {
+        left: 200px;
+        position: absolute;
+        min-height: 352px;
+    }
+    &__subtitle {
+        text-align: left;
+    }
+    &__title {
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        color: #3D4F9F;
+        text-align: left;
+        margin-top: 28px;
+        span {
+            font-weight: 500;
+        }
+    }
+    &__text {
+        max-width: 413px;
+        margin-top: 27px;
+    }
+    &__btns {
+        display: flex;
+    }
+    &__btn {
+        width: 130px;
+        background: #F5F8FF;;
+        border: 1px solid #D1D1E4;
+        border-radius: 1px;
+        a {
+            font-size: 13px;
+            color: #ADB4D2;
+        }
+        &_active{
+            position: relative;
+            background: #4C85FF;
+            border: none;
+            a {
+                position: absolute;
+                left: 25px;
+                top: calc(25% + 2px);
+                color: #fff;
+            }
+            &:after {
+                content: url('../icons/polygon.svg');
+                position: absolute;
+                top: calc(25% - 2px);
+                right: 18px;
+            }
+        }
+    }
+    &__col2 {
+        left: 540px;
+        position: absolute;
+        min-height: 436px;
+        filter: drop-shadow(0px 100px 150px #F2F6FF);
+    }
+    &__img {
+        img {
+            width: 100%;
+        }
+    }
+    #apps {
+        left: calc(-100px);
+        top: calc(-100px);
+    }
+}

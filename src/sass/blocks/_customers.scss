@@ -1,0 +1,11 @@
+.customers {
+    height: 146px;
+    display: flex;
+    justify-content: center;
+    &__logos {
+        width: 888px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

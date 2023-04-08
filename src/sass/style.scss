@@ -1,0 +1,30 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/fonts';
+
+
+
+a {
+    text-decoration: none;
+    color: #697CA6;
+    &:hover{
+        color: #1e4ae7;
+    }
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+@import 'blocks/btns';
+@import 'blocks/title';
+@import 'blocks/header';
+@import 'blocks/increase';
+@import 'blocks/customers';
+@import 'blocks/plan-manage';
+@import 'blocks/about';
+@import 'blocks/stats';
+@import 'blocks/blog';
+@import 'blocks/slider';
+@import 'blocks/quotes';

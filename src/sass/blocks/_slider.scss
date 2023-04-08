@@ -1,0 +1,107 @@
+.slider {
+    &__item {
+        margin: 0 auto;
+        width: 958px;
+        background: #fff;
+        padding: 64px 35px 64px 35px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__images {
+        width: 408px;
+        // flex: 50%;
+        display: grid;
+        grid-template-columns: 267px 127px;
+        gap: 13px;
+        grid-template-rows: repeat(2, 127px);
+    }
+        
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &__img:nth-child(1) {
+        grid-row: 1 / 3;
+        grid-column: 1 / 2;
+    }
+    &__img:nth-child(2) {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+    }
+    &__img:nth-child(3) {
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+    }
+
+    &__descr {
+        width: 408px;
+        // flex: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 408px;
+    }
+    &__title {
+        font-family: 'Quicksand';
+        font-weight: 400;
+        font-size: 36px;
+        color: #3D4F9F;
+    }
+    &__text {
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 27px;  
+        letter-spacing: 0.03em;
+        color: #8D96BD;
+    }
+    &__btn {
+        width: 250px;
+        background: rgba($color: #000000, $alpha: 0);
+        a {
+            color: #8D96BD;
+        }
+    }
+}
+
+.mini-slider {
+    &__inner {
+        width: 423px;
+        display: flex;
+        height: 207px;
+        overflow: scroll;
+    }
+    &__item {
+        position: relative;
+        padding: 40px 70px;
+        width: 423px;
+        height: 175px;
+        background-color: #fff;
+    }
+    &__icon {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        width: 62px;
+        height: 62px;  
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }      
+    }
+    &__descr {
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        color: #676F95;
+    }
+}
+
+
+
