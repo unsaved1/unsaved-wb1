@@ -66,13 +66,9 @@
 }
 
 .mini-slider {
-    &__inner {
-        width: 423px;
-        display: flex;
-        height: 207px;
-        overflow: scroll;
-    }
+    width: 423px;
     &__item {
+        display: inline-block;
         position: relative;
         padding: 40px 70px;
         width: 423px;

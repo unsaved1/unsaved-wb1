@@ -1,0 +1,16 @@
+.footer {
+    height: 287px;
+    padding: 93px 117px;
+    &__wrapper {
+        padding: 0;
+    }
+    &__text {
+        margin-left: 68px;
+        font-family: 'Quicksand';
+        font-weight: 600;
+        font-size: 12px;
+        letter-spacing: 0.05em;
+        text-transform: capitalize;
+        color: #AEB8D0;
+    }
+}
