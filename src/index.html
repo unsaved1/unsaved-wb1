@@ -8,32 +8,39 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <header class="menu">
 
-        <nav class="menu__nav">
-            <div class="menu__logo main-logo"></div>
+    <header class="behind">
+        <div class="menu">
+            <nav class="menu__nav">
+                <div class="menu__logo"></div>
 
-            <a href="#" class="menu__link">Home</a>
-            <a href="#" class="menu__link">Blog</a>
-            <a href="#" class="menu__link">Features</a>
-            <a href="#" class="menu__link">Pricing</a>
-            <a href="#" class="menu__link">Documentation</a>
-        </nav>
+                <a href="#home" class="menu__link">Home</a>
+                <a href="#" class="menu__link">Blog</a>
+                <a href="#" class="menu__link">Features</a>
+                <a href="#" class="menu__link">Pricing</a>
+                <a href="#" class="menu__link">Documentation</a>
+            </nav>
 
 
-        <div class="menu__social-links">
-            <a href="#" class="menu__social-link"><img src="images/social-logo/facebook.svg" alt="facebook"></a>
-            <a href="#" class="menu__social-link"><img src="images/social-logo/Telegram_logo.svg" alt="telegram"></a>
-            <a href="#" class="menu__social-link"><img src="images/social-logo/twitter.svg" alt="twitter"></a>
-            <a href="#" class="menu__social-link"><img src="images/social-logo/M.svg" alt="M"></a>
-        
-            <button class="menu__btn btn"><a href="#">Get started</a></button>
+            <div class="menu__social-links">
+                <div class="menu__wrapper">
+                    <a href="#" class="menu__social-link"><img src="images/social-logo/facebook.svg" alt="facebook"></a>
+                    <a href="#" class="menu__social-link"><img src="images/social-logo/Telegram_logo.svg" alt="telegram"></a>
+                    <a href="#" class="menu__social-link"><img src="images/social-logo/twitter.svg" alt="twitter"></a>
+                    <a href="#" class="menu__social-link"><img src="images/social-logo/M.svg" alt="M"></a>
+                </div>
+                <button class="menu__btn btn"><a href="#">Get started</a></button>
+            </div>
         </div>
-
     </header>
 
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
 
-    <section class="increase">
+    <section class="increase" id="home">
         <div class="container">
             <h2 class="increase__subtitle subtitle">plan your life</h2>
             <h1 class="increase__title">Increase your <span>productivity</span></h1>
@@ -42,12 +49,14 @@
     </section>
 
     <section class="customers">
-        <div class="customers__logos">
-            <a href="#" class="customers__logo"><img src="images/customers-logo/bitbucket.png" alt=""></a>
-            <a href="#" class="customers__logo"><img src="images/customers-logo/apple-watch.png" alt=""></a>
-            <a href="#" class="customers__logo"><img src="images/customers-logo/facebook.png" alt=""></a>
-            <a href="#" class="customers__logo"><img src="images/customers-logo/atlassian.png" alt=""></a>
-            <a href="#" class="customers__logo"><img src="images/customers-logo/audi.png" alt=""></a>
+        <div class="container">
+            <div class="customers__logos">
+                <a href="#" class="customers__logo"><img src="images/customers-logo/bitbucket.png" alt=""></a>
+                <a href="#" class="customers__logo"><img src="images/customers-logo/apple-watch.png" alt=""></a>
+                <a href="#" class="customers__logo"><img src="images/customers-logo/facebook.png" alt=""></a>
+                <a href="#" class="customers__logo"><img src="images/customers-logo/atlassian.png" alt=""></a>
+                <a href="#" class="customers__logo"><img src="images/customers-logo/audi.png" alt=""></a>
+            </div>
         </div>
     </section>
 
@@ -56,15 +65,15 @@
             <div class="plan-manage__col1">
                 <div class="plan-manage__col1_wrapper">
                     <h3 class="plan-manage__subtitle subtitle">DESKTOP AND MOBILE APP</h3>
-                <h2 class="plan-manage__title title">Plan <span>and</span> manage</h2>
-                <p class="plan-manage__text text">
-                    Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an, insolens gubergren similique est cu. Et vel modus congue vituperata. Solum patrioque no sea. Mea ex malis mollis oporteat. Eum an expetenda consequat.
-                </p>
+                    <h2 class="plan-manage__title title">Plan <span>and</span> manage</h2>
+                    <p class="plan-manage__text text">
+                        Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an, insolens gubergren similique est cu. Et vel modus congue vituperata. Solum patrioque no sea. Mea ex malis mollis oporteat. Eum an expetenda consequat.
+                    </p>
     
-                <div class="plan-manage__btns">
-                    <button class="plan-manage__btn plan-manage__btn_active btn"><a href="#">View video</a></button>
-                    <button class="plan-manage__btn btn"><a href="#">See features</a></button>
-                </div>
+                    <div class="plan-manage__btns">
+                        <button class="plan-manage__btn plan-manage__btn_active btn"><a href="#">View video</a></button>
+                        <button class="plan-manage__btn btn"><a href="#">See features</a></button>
+                    </div>
                 </div>
             </div>
             
@@ -136,8 +145,8 @@
                     <div class="slider__item">
                         <div class="slider__images">
                             <img src="images/blog/blog1.jpg" alt="1" class="slider__img">
-                            <img src="images/blog/blog2.jpg" alt="2" class="slider__img">
-                            <img src="images/blog/blog3.jpg" alt="3" class="slider__img">
+                            <!-- <img src="images/blog/blog2.jpg" alt="2" class="slider__img">
+                            <img src="images/blog/blog3.jpg" alt="3" class="slider__img"> -->
                         </div>
                         <div class="slider__descr">
                             <div class="slider__title">How to start planning</div>
@@ -149,34 +158,34 @@
                         </div>
                     </div>
 
-                    <!-- <div class="slider__slide1 slide">
-                        <div class="slide__images">
-                            <img src="images/blog/blog1.jpg" alt="1" class="slide__img slide__img_1">
-                            <img src="images/blog/blog2.jpg" alt="2" class="slide__img slide__img_2">
-                            <img src="images/blog/blog3.jpg" alt="3" class="slide__img slide__img_3">
+                    <!-- <div class="slider__item">
+                        <div class="slider__images">
+                            <img src="images/blog/blog1.jpg" alt="1" class="slider__img">
+                            <img src="images/blog/blog2.jpg" alt="2" class="slider__img">
+                            <img src="images/blog/blog3.jpg" alt="3" class="slider__img">
                         </div>
-                        <div class="slide__descr">
-                            <div class="slide__title">How to start planning</div>
-                            <div class="slide__text">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti. Natum petentium principes mei ea. Tota everti periculis vis ei, quas tibique pro at, eos ut decore ...</div>
-                            <div class="slide__btns">
+                        <div class="slider__descr">
+                            <div class="slider__title">How to start planning</div>
+                            <div class="slider__text">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti. Natum petentium principes mei ea. Tota everti periculis vis ei, quas tibique pro at, eos ut decore ...</div>
+                            <div class="slider__btns">
                                 <button class="btn"><a href="#">Read now</a></button>
-                                <button class="slide__btn btn"><a href="#">Add to your bookmarks</a></button>
+                                <button class="slider__btn btn"><a href="#">Add to your bookmarks</a></button>
                             </div>
                         </div>
                     </div> -->
 
-                    <!-- <div class="slider__slide1 slide">
-                        <div class="slide__images">
-                            <img src="images/blog/blog1.jpg" alt="1" class="slide__img slide__img_1">
-                            <img src="images/blog/blog2.jpg" alt="2" class="slide__img slide__img_2">
-                            <img src="images/blog/blog3.jpg" alt="3" class="slide__img slide__img_3">
+                    <!-- <div class="slider__item">
+                        <div class="slider__images">
+                            <img src="images/blog/blog1.jpg" alt="1" class="slider__img">
+                            <img src="images/blog/blog2.jpg" alt="2" class="slider__img">
+                            <img src="images/blog/blog3.jpg" alt="3" class="slider__img">
                         </div>
-                        <div class="slide__descr">
-                            <div class="slide__title">How to start planning</div>
-                            <div class="slide__text">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti. Natum petentium principes mei ea. Tota everti periculis vis ei, quas tibique pro at, eos ut decore ...</div>
-                            <div class="slide__btns">
+                        <div class="slider__descr">
+                            <div class="slider__title">How to start planning</div>
+                            <div class="slider__text">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti. Natum petentium principes mei ea. Tota everti periculis vis ei, quas tibique pro at, eos ut decore ...</div>
+                            <div class="slider__btns">
                                 <button class="btn"><a href="#">Read now</a></button>
-                                <button class="slide__btn btn"><a href="#">Add to your bookmarks</a></button>
+                                <button class="slider__btn btn"><a href="#">Add to your bookmarks</a></button>
                             </div>
                         </div>
                     </div> -->
@@ -188,23 +197,25 @@
     <section class="quotes">
         <div class="container">
             <div class="quotes__wrapper">
-                <div class="quotes__subtitle subtitle">TESTIMONIALS</div>
-                <div class="quotes__title title">Customers's quotes</div>
-                <div class="quotes__descr">Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an.</div>
-            </div>
-
-            <div class="quotes__slider mini-slider">
-                <div class="mini-slider__inner">
-                    <div class="mini-slider__item">
-                        <div class="mini-slider__descr">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.</div>
-                        <div class="mini-slider__icon"><img src="images/social-logo/man.jpg" alt="man"></div>
+                <div class="quotes__text">
+                    <div class="quotes__subtitle subtitle">TESTIMONIALS</div>
+                    <div class="quotes__title title">Customers's quotes</div>
+                    <div class="quotes__descr">Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an.</div>
+                </div>
+    
+                <div class="quotes__slider mini-slider">
+                    <div class="mini-slider__inner">
+                        <div class="mini-slider__item">
+                            <div class="mini-slider__descr">Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.</div>
+                            <div class="mini-slider__icon"><img src="images/social-logo/man.jpg" alt="man"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="faq">
+    <!-- <section class="faq">
         <div class="container">
             <div class="faq__subtitle subtitle">Customer help</div>
             <div class="faq__title title">Frequently asked questions</div>
@@ -252,9 +263,9 @@
                 
             </ul>
         </div>
-    </section>
+    </section> -->
 
-    <section class="get-started">
+    <!-- <section class="get-started">
         <div class="container">
             <div class="get-started__subtitle subtitle">PLAN YOUR LIFE</div>
             <div class="get-started__title title">Get <span>started</span> now</div>
@@ -264,9 +275,9 @@
                 <button class="get-started__btn get-started__btn_transparent btn"><a href="#">Read documentation</a></button>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <section class="news">
+    <!-- <section class="news">
         <div class="container">
             <div class="news__wrapper">
                 <div class="news__text">
@@ -280,9 +291,9 @@
                 </form>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <footer class="footer">
+    <!-- <footer class="footer">
 
         <div class="footer__wrapper menu">
             <nav class="menu__nav">
@@ -309,7 +320,7 @@
         <div class="footer__text">Copyright © 2018 by Random site
         </div>
         
-    </footer>
+    </footer> -->
 
     <script src="js/script.js"></script>
 </body>

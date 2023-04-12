@@ -4,12 +4,15 @@
     &__wrapper {
         margin: 0 auto;
         margin-top: 92px;
-        width: 760px;
-        display: flex;
-        justify-content: space-between;
+        // display: flex;
+        // justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        grid-template-rows: repeat(auto-fit, minmax(254px, 1fr));
+        column-gap: 20px;
     }
     &__item {
-        width: 140px;
+        // width: 140px;
         align-items: center;
         min-height: 254px;
         &_icon {

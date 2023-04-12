@@ -1,11 +1,15 @@
 .customers {
-    height: 146px;
+    min-height: 146px;
     display: flex;
-    justify-content: center;
+    align-items: center;
     &__logos {
-        width: 888px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        width: unset;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-template-rows: repeat(auto-fit, minmax(24px, 1fr));
+        row-gap: 16px;
+        justify-content: center;
+        justify-items: center;
+        margin: auto 0;
     }
 }

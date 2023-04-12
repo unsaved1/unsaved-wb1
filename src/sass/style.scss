@@ -17,9 +17,10 @@ a {
 }
 
 
+
 @import 'blocks/btns';
 @import 'blocks/title';
-@import 'blocks/header';
+@import 'blocks/menu';
 @import 'blocks/increase';
 @import 'blocks/customers';
 @import 'blocks/plan-manage';
@@ -32,3 +33,7 @@ a {
 @import 'blocks/get-started';
 @import 'blocks/news';
 @import 'blocks/footer';
+
+@import 'blocks/hamburger';
+
+@import 'blocks/media';

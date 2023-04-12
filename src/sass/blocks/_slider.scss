@@ -56,6 +56,10 @@
         letter-spacing: 0.03em;
         color: #8D96BD;
     }
+    &__btns {
+        display: flex;
+        align-items: center;
+    }
     &__btn {
         width: 250px;
         background: rgba($color: #000000, $alpha: 0);

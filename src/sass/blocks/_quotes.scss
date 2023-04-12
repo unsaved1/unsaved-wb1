@@ -2,13 +2,13 @@
     background: linear-gradient(180deg, #EAF0FF 0%, #F6F9FF 100%);
     min-height: 479px;
     padding: 109px 0;
-    .container {
-        width: 100%;
-        padding: 0 276px;
+    &__wrapper {
+        margin: 0 auto;
+        width: 888px;
         display: flex;
         justify-content: space-between;
     }
-    &__wrapper {
+    &__text {
         width: 360px;
         display: flex;
         flex-direction: column;

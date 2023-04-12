@@ -1,0 +1,228 @@
+@media (max-width: 1205px) {
+    .container {
+        width: 940px;
+    }
+    .menu {
+        width: 960px;
+    }
+    .plan-manage {
+        &__wrapper {
+            width: 940px;
+        }
+        &__col1 {
+            width: 300px;
+        }
+    }
+}
+@media (max-width: 992px) {
+    .container {
+        width: 720px;
+    }
+    .menu {
+        width: 740px;
+        &__nav {
+            width: 420px;
+        }
+        &__social-links {
+            width: 280px;
+        }
+    }
+    .plan-manage {
+        &__wrapper {
+            width: 600px;
+        }
+        &__col1 {
+            width: 250px;
+        }
+        &__col2 {
+            width: 350px;
+        }
+        &__img {
+            width: 350px;
+        }
+    }
+    .slider {
+        margin-top: 30px;
+        &__item {
+            width: unset;
+            flex-direction: column-reverse;
+            align-items: center;
+            padding: 30px 0;
+        }
+        &__descr {
+            padding: 0 30px;
+        }
+        &__images {
+            margin-top: 25px;
+        }
+        &__btns {
+            margin-top: 10px;
+        }
+    }
+    .blog {
+        min-height: 800px;
+        padding: 40px 0;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        width: 540px;
+    }
+    .menu {
+        width: 540px;
+        &__nav {
+            width: 400px;
+        }
+        &__social-links {
+            width: 160px;
+            justify-content: end;
+        }
+        &__wrapper {
+            height: 120px;
+            width: 40px;
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            left: 3%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    .increase {
+        &__title {
+            font-size: 32px;
+        }
+        &__text {
+            width: 410px;
+        }
+    }
+    .plan-manage {
+        &__wrapper {
+            width: 480px;
+            flex-direction: column;
+        }
+        &__col1 {
+            width: 100%;
+        }
+        &__subtitle, &__title, &__text {
+            text-align: center;
+        }
+        &__text {
+            margin: 0 auto;
+            margin-top: 27px;
+            margin-bottom: 1rem;
+        }
+        &__btns {
+            justify-content: center;
+        }
+        &__col2 {
+            width: 100%;
+        }
+        &__img {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .btn {
+        min-width: 80px;
+        a {
+            font-size: 11px;
+        }
+    }
+    .container {
+        width: 100%;
+        padding: 0 5%;
+    }
+    .behind {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+    }
+    .hamburger {
+        display: flex;
+    }
+    .menu {
+        position: fixed;
+        right: -100%;
+        width: 80%;
+        height: 100vh;
+        flex-direction: column;
+        background: rgba($color: #000000, $alpha: 0.6);
+        transition: 0.4s all;
+        &_active {
+            right: 0;
+        }
+        &__nav {
+            width: 70%;
+            height: 70%;
+            flex-direction: column;
+        }
+        &__logo, &__social-links {
+            display: none;
+        }
+        &__link {
+            color: #fff;
+            transition: 0.2s all;
+            &:hover {
+                color: #fff;
+                text-shadow: 0px 3px 5px #fff;
+            }
+        }
+    }
+    .increase {
+        &__text {
+            width: auto;
+            max-width: 350px;
+        }
+    }
+    .customers {
+        &__logo {
+            max-width: 80px;
+            img {
+                width: 100%
+            };
+        }
+    }
+    .plan-manage {
+        min-height: 300px;
+        padding: 50px 5%;
+        &__wrapper {
+            width: 100%;
+        }
+        &__col2 {
+            display: none;
+        }
+    }
+    .about {
+        padding: 50px;
+        &__btns {
+            margin-top: 30px;
+            width: 200px;
+        }
+    }
+    .stats {
+        &__col1 {
+            padding-right: 40px;
+        }
+        &__col2 {
+            padding-left: 40px;
+        }
+    }
+    .slider {
+        &__descr {
+            width: unset;
+        }
+        &__images {
+            width: unset;
+            grid-template: 1fr / 1fr;
+        }
+        &__btns {
+            .btn {
+                padding: 0 6px;
+            }
+        }
+    }
+}
