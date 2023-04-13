@@ -4,12 +4,13 @@
     padding: 109px 0;
     &__wrapper {
         margin: 0 auto;
-        width: 888px;
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        grid-template-rows: repeat(auto-fit, minmax(195px, 1fr));
+        gap: 20px;
+        justify-items: center;
     }
     &__text {
-        width: 360px;
         display: flex;
         flex-direction: column;
         align-items: start;

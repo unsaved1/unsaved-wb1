@@ -10,10 +10,9 @@
         grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
         grid-template-rows: repeat(auto-fit, minmax(254px, 1fr));
         column-gap: 20px;
+        justify-items: center;
     }
     &__item {
-        // width: 140px;
-        align-items: center;
         min-height: 254px;
         &_icon {
             margin: 0 auto;
@@ -35,6 +34,7 @@
             color: #4074F8;
         }
         &_descr {
+            max-width: 140px;
             text-align: center;
             margin-top: 25px;
             font-family: 'Open Sans';

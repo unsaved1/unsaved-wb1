@@ -1,4 +1,4 @@
-@media (max-width: 1205px) {
+@media (max-width: 1225px) {
     .container {
         width: 940px;
     }
@@ -12,6 +12,10 @@
         &__col1 {
             width: 300px;
         }
+    }
+    .footer {
+        height: 200px;
+        padding: 40px 0;
     }
 }
 @media (max-width: 992px) {
@@ -28,6 +32,7 @@
         }
     }
     .plan-manage {
+        padding: 50px 0 0 0;
         &__wrapper {
             width: 600px;
         }
@@ -62,6 +67,39 @@
     .blog {
         min-height: 800px;
         padding: 40px 0;
+        .slider__descr {
+            padding: 0;
+        }
+    }
+    .quotes {
+        &__text {
+            align-items: center;
+        }
+        &__title {
+            font-size: 30px;
+        }
+        &__descr {
+            text-align: center;
+        }
+        .mini-slider__descr {
+            text-align: center;
+            font-size: 12px;
+        }
+    }
+    .faq {
+        min-height: 820px;
+        padding: 80px 0;
+        &__questions {
+            width: 100%;
+        }
+    }
+    .news {
+        &__input {
+            width: 260px;
+        }
+        &__btn {
+            width: unset;
+        }
     }
 }
 @media (max-width: 768px) {
@@ -123,6 +161,48 @@
             width: 100%;
         }
     }
+    .about {
+        padding: 40px 0;
+        &__btns {
+            margin-top: 30px;
+        }
+    }
+    .quotes {
+        padding: 0 0 40px 0;
+    }
+    .faq {
+        &__btn {
+            height: 60px;
+            padding: 0;
+            a {
+                font-size: 12px;
+            }
+        }
+    }
+    .news {
+        padding: 40px 0;
+        min-height: 220px;
+        &__wrapper {
+            flex-wrap: wrap;
+        }
+        &__form {
+            margin-top: 20px;
+            width: 100%;
+        }
+        &__input {
+            width: 70%;
+        }
+        &__btn {
+            width: 10%;
+        }
+    }
+    .footer {
+        .menu {
+            &__social-links {
+                display: none;
+            }
+        }
+    }
 }
 
 @media (max-width: 576px) {
@@ -140,35 +220,39 @@
         position: fixed;
         width: 100%;
         height: 100vh;
+        z-index: 10;
     }
     .hamburger {
         display: flex;
+        z-index: 10;
     }
-    .menu {
-        position: fixed;
-        right: -100%;
-        width: 80%;
-        height: 100vh;
-        flex-direction: column;
-        background: rgba($color: #000000, $alpha: 0.6);
-        transition: 0.4s all;
-        &_active {
-            right: 0;
-        }
-        &__nav {
-            width: 70%;
-            height: 70%;
+    header {
+        .menu {
+            position: fixed;
+            right: -100%;
+            width: 80%;
+            height: 100vh;
             flex-direction: column;
-        }
-        &__logo, &__social-links {
-            display: none;
-        }
-        &__link {
-            color: #fff;
-            transition: 0.2s all;
-            &:hover {
+            background: rgba($color: #000000, $alpha: 0.6);
+            transition: 0.4s all;
+            &_active {
+                right: 0;
+            }
+            &__nav {
+                width: 70%;
+                height: 70%;
+                flex-direction: column;
+            }
+            &__logo, &__social-links {
+                display: none;
+            }
+            &__link {
                 color: #fff;
-                text-shadow: 0px 3px 5px #fff;
+                transition: 0.2s all;
+                &:hover {
+                    color: #fff;
+                    text-shadow: 0px 3px 5px #fff;
+                }
             }
         }
     }
@@ -179,6 +263,7 @@
         }
     }
     .customers {
+        padding: 40px 0;
         &__logo {
             max-width: 80px;
             img {
@@ -191,6 +276,10 @@
         padding: 50px 5%;
         &__wrapper {
             width: 100%;
+            padding: 0 10px;
+        }
+        &__title {
+            font-size: 30px;
         }
         &__col2 {
             display: none;
@@ -206,23 +295,124 @@
     .stats {
         &__col1 {
             padding-right: 40px;
+            font-size: 36px;
+        }
+        &__col1_descr, &__col2_descr {
+            font-size: 14px;
         }
         &__col2 {
             padding-left: 40px;
+            font-size: 36px;
         }
     }
-    .slider {
+    .quotes {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+            grid-template-rows: repeat(auto-fit,minmax(195px,1fr));
+            gap: 20px 85px;
+        }
         &__descr {
-            width: unset;
+            width: 100%;
+        }
+    }
+    .blog {
+        min-height: 700px;
+    }
+    .slider {
+        &__item {
+            padding: 30px 20px;
+        }
+        &__descr {
+            width: 100%;
+        }
+        &__title {
+            font-size: 22px
+        }
+        &__text {
+            margin-top: 10px;
+            line-height: 20px;
         }
         &__images {
-            width: unset;
-            grid-template: 1fr / 1fr;
+            max-width: 408px;
+            display: flex;
+            width: 100%;
         }
         &__btns {
+            margin-top: 20px;
             .btn {
                 padding: 0 6px;
             }
+        }
+        &__img:nth-child(2), &__img:nth-child(3) {
+            display: none;
+        }
+    }
+    .mini-slider {
+        &__item {
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+        }
+        &__icon {
+            width: 45px;
+            height: 45px;
+        }
+    }
+    .faq {
+        padding: 40px 0;
+        &__item {
+            padding-left: 30px;
+        }
+        &__wrapper {
+            flex-wrap: wrap;
+        }
+        &__btn {
+            margin-top: 10px;
+            height: 43px;
+        }
+        &__question:before {
+            left: 8.5px;
+        }
+    }
+    .get-started {
+        &__title {
+            font-size: 36px;
+        }
+    }
+    .news {
+        &__form {
+            min-height: 30px;
+        }
+        &__input, &__btn {
+            font-size: 12px;
+            height: 40px;
+        }
+        &__input {
+            width: 68%;
+        }
+    }
+    .footer {
+        height: unset;
+        padding: 20px 0;
+        .menu {
+            min-height: 30px;
+            width: 100%;
+            &__nav {
+                display: none;
+            }
+            &__social-links {
+                display: flex;
+                justify-content: space-between;
+                margin: 0 auto;
+            }
+            &__btn {
+                display: none;
+            }
+        }
+
+        &__text {
+            margin: 0;
+            text-align: center;
         }
     }
 }
